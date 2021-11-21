@@ -1,0 +1,286 @@
+<!-- HTML 버전 -->
+<!DOCTYPE html>
+<!-- HTML 시작 -->
+<html lang="en"> 
+<!-- HEAD 영역 : JS, CSS 연결 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        실제 컨텐츠 영역 
+        참고 홈페이지
+        https://www.w3schools.com/tags/default.asp
+        태그삽입은 태그명 입력후 [TAB]
+    -->
+    <!-- HEADIND : 제목 용도 -->
+    <H1>제목1</H1>
+    <H2>제목2</H2>
+    <H3>제목3</H3>
+    <!-- 수평선 hORIZONTAL RULE -->
+    <HR></HR>
+    <!-- 문단 P 
+        단순줄바꿈 BR => BREAK LINE -->
+    <P>
+        문단입니다 <br><br>
+        문단입니다 <br>
+        문단입니다 <br>
+    
+    </P>
+    <hr>
+    <!-- 
+        ul>li : 목록문단
+        ol>li : 순서목록문단
+
+        ul: unordered list
+        ol: ordered list
+        li : list
+    -->
+    <ul>
+        <li>사과</li>
+        <li>포도</li>
+        <li>바나나</li>
+
+    </ul>
+    <hr>
+    <ol>
+        <li>엑셀</li>
+        <li>MYSQL</li>
+        <li>Python</li>
+        <li>수학과 통계</li>
+    </ol>
+    <hr>
+    <!--
+    dl>dt+dd : 정의문단
+    dl : definition list
+    dt : definition title
+    dd : definition data   
+    
+    ctrl+spacebar-->
+
+    <dl>
+        <dt>점심메뉴</dt>
+        <dd>비빔밥 <br> 라면</dd>
+        <dt>점심메뉴2</dt>
+        <dd>쫄면 <br> 떡볶이</dd>
+    </dl>
+
+    <hr>
+    <!-- blockquote
+    인용문에 사용
+    들여쓰기 되어 앞뒤에 여백 생성 -->
+    <blockquote>
+        들여쓰기 용도입니다. <br>
+        들여쓰기 용도입니다. <br>
+        들여쓰기 용도입니다. <br>
+    </blockquote>
+    <!-- 
+    em / i  
+    => 기울임꼴 
+    인라인요소 
+
+    strong / b  
+    => 진하게 
+    인라인요소 
+     -->
+     <p> <b>H</b>ello <em>world</em></p>
+     <hr>
+     <!-- 
+    img : image 
+    <img src=이미지경로 alt=대체텍스트 > 
+    <img src=이미지경로 alt=대체텍스트 />
+    src = source
+    alt = alternate text : 이미지 대신 나오는 글자 (엑박)
+    width/height/border 
+    인라인 요소 
+      -->
+      <!-- <img src="웹사이트 이미지주소복사" alt="커피이미지"> -->
+      <img src="커피.jpg" alt="커피 이미지" width="300">
+      <hr>
+      <!-- 
+        a : anchor
+        파일(html, 이미지, 웹상주소)과 연결기능 
+        인라인요소 
+
+        a의 속성들
+        href - 연결주소(html, http://~)
+        target - _blank : 새탭에 주소가 표시된다. 
+        title - 하이퍼링크 툴팁기능 
+        
+
+        텍스트 하이퍼링크 
+        <a href='URL'> 글자  </a>
+
+        이미지 하이퍼링크 
+        <a href='URL'> 
+        <img src=이미지경로 atl=대체텍스트>
+        </a>
+       -->
+      <ul>
+          <li><a href="http://google.com">구글</a></li>
+          <!-- target="_blank" 다른탭에서 하이퍼링크연결 -->
+          <li><a href="http://naver.com" target="_blank">네이버</a></li>
+          <li>
+              <a href="http://google.com">
+                  <img src="data:image/png;base64,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" alt="이미지">
+              </a></li>
+
+      </ul>
+      <hr>
+      <!-- 
+          table 
+            table>tr>td
+            table>tr>th
+            
+            tr : table row  - 행 
+            td : table data - 셀 
+            th : table head - 제목셀, 글내용이 중앙정렬, 진하게표시
+
+            관련속성들... 
+            border : 테두리 
+            width / height : 가로 세로 크기 
+            cellpadding : 셀 안쪽여백 
+            cellspacing : 셀과 셀 사이 여백 
+            align : 가로 정렬 center/right/left
+            valign : 셀의 세로 정렬 top/middle/bottom
+            bordercolor: 테두리 색상 
+            bgcolor : 배경 색상
+       -->
+       <h2>2행 2열</h2>
+       <table border = "1" cellpadding="5" align="center" cellspacing="0">
+           <!-- 1행 -->
+           <tr>
+               <td>1-1</td>
+               <td>1-2</td>
+           </tr>
+           <!-- 2행 -->
+           <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+           </tr>
+       </table>
+       <hr>
+       <!-- 
+           셀합치기 
+            colspan : 가로합치기 
+            rowspan : 세로합치기 
+            주의사항: 셀을 합치고 나머지는 삭제하거나 주석처리한다.
+        -->
+        <h2>4행 4열</h2>
+        <!-- table>(tr>td{$}*4)*4 -->
+        <table border="1" align = "center">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </table>
+        <hr>
+        <table border="1" align = "center" cellpadding="10">
+            <tr>
+                <!-- 가로합치기 -->
+                <td colspan="4">1</td>
+                <!-- <td>2</td>
+                <td>3</td>
+                <td>4</td> -->
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="3">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+            </tr>
+        </table>
+        <hr>
+        <h2>퀴즈</h2>
+        <table border="1" align="center" cellpadding =20>
+            <tr>
+                <!-- webcolor 에서 색상선택 가능 -->
+                <td colspan="3" bgcolor="lemonchiffon">1-1</td>
+                <!-- <td>2</td>
+                <td>3</td> -->
+                <td>1-4</td>
+                <td rowspan="5" bgcolor="lemonchiffon">1-5</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+                <td>2-3</td>
+                <td>2-4</td>
+                <!-- <td>2-5</td> -->
+            </tr>
+            <tr>
+                <td rowspan=3>3-1</td>
+                <td>3-2</td>
+                <td>3-3</td>
+                <td>3-4</td>
+                <!-- <td>3-5</td> -->
+            </tr>
+            <tr>
+                <!-- <td>1</td> -->
+                <td>4-2</td>
+                <td>4-3</td>
+                <td>4-4</td>
+                <!-- <td>4-5</td> -->
+            </tr>
+            <tr>
+                <!-- <td>1</td> -->
+                <td>5-2</td>
+                <td>5-3</td>
+                <td>5-4</td>
+                <!-- <td>5-5</td> -->
+            </tr>
+        </table>
+        <hr>
+        <!-- 
+            입력창 만들기
+            label 
+            : 텍스트필드에 제목을 달아주는 역할 
+            for: 텍스트필드의 아이디값과 연결 
+
+            input:text
+            텍스트필드 
+            :한줄 글상자  
+        -->
+        <from action="">
+        <label for="userID">아이디</label>
+        <input type="text" name="" id="userID">
+        </from>
+
+
+</body>
+</html>
